@@ -14,6 +14,8 @@
 		B5A20F811EC8FAA000D169F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A20F7F1EC8FAA000D169F1 /* LaunchScreen.storyboard */; };
 		B5A20F8C1EC8FAA000D169F1 /* RetroCaculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F8B1EC8FAA000D169F1 /* RetroCaculatorTests.swift */; };
 		B5A20F971EC8FAA000D169F1 /* RetroCaculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F961EC8FAA000D169F1 /* RetroCaculatorUITests.swift */; };
+		B5A20FAC1EC99F3F00D169F1 /* Minecrafter.Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5A20FAB1EC99F3E00D169F1 /* Minecrafter.Alt.ttf */; };
+		B5A20FAE1EC9A94E00D169F1 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = B5A20FAD1EC9A94E00D169F1 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B5A20F921EC8FAA000D169F1 /* RetroCaculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCaculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A20F961EC8FAA000D169F1 /* RetroCaculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCaculatorUITests.swift; sourceTree = "<group>"; };
 		B5A20F981EC8FAA000D169F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A20FAB1EC99F3E00D169F1 /* Minecrafter.Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Alt.ttf; sourceTree = "<group>"; };
+		B5A20FAD1EC9A94E00D169F1 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				B5A20F7D1EC8FAA000D169F1 /* Assets.xcassets */,
 				B5A20F7F1EC8FAA000D169F1 /* LaunchScreen.storyboard */,
 				B5A20F821EC8FAA000D169F1 /* Info.plist */,
+				B5A20FAB1EC99F3E00D169F1 /* Minecrafter.Alt.ttf */,
+				B5A20FAD1EC9A94E00D169F1 /* btn.wav */,
 			);
 			path = RetroCaculator;
 			sourceTree = "<group>";
@@ -235,8 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A20FAE1EC9A94E00D169F1 /* btn.wav in Resources */,
 				B5A20F811EC8FAA000D169F1 /* LaunchScreen.storyboard in Resources */,
 				B5A20F7E1EC8FAA000D169F1 /* Assets.xcassets in Resources */,
+				B5A20FAC1EC99F3F00D169F1 /* Minecrafter.Alt.ttf in Resources */,
 				B5A20F7C1EC8FAA000D169F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +524,7 @@
 				B5A20F9D1EC8FAA000D169F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5A20F9E1EC8FAA000D169F1 /* Build configuration list for PBXNativeTarget "RetroCaculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				B5A20FA01EC8FAA000D169F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5A20FA11EC8FAA000D169F1 /* Build configuration list for PBXNativeTarget "RetroCaculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +542,7 @@
 				B5A20FA31EC8FAA000D169F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
