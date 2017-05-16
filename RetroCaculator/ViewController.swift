@@ -43,13 +43,16 @@ class ViewController: UIViewController {
             print(err.debugDescription)
         }
         
-        OutputLbl.text = "0"
+        OutputLbl.text = "0.0"
     }
     
     @IBAction func numbersPressed(sender: UIButton) {
         playSound()
-        runningNumber += "\(sender.tag)"
-        OutputLbl.text = runningNumber
+        if !(sender.tag == 0 && OutputLbl.text == "0") {
+            runningNumber += "\(sender.tag)"
+            OutputLbl.text = runningNumber
+        }
+        
     }
     
     @IBAction func addPressed(sender: AnyObject) {
@@ -64,13 +67,16 @@ class ViewController: UIViewController {
     @IBAction func dividePressed(sender: AnyObject) {
         processOperation(operation: .divide)
     }
-    
     @IBAction func equalPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
+    }
+    @IBAction func clearPressed(_ sender: Any) {
+        clearAll()
     }
     
     
     func processOperation(operation: Operation) {
+        playSound()
         if currentOperation != Operation.empty {
             print("Hell")
             if runningNumber != "" {
@@ -100,6 +106,15 @@ class ViewController: UIViewController {
         }
     }
     
+    func clearAll() {
+        playSound()
+        runningNumber = ""
+        leftHNumber = ""
+        rightHNumber = ""
+        result = ""
+        currentOperation = Operation.empty
+        OutputLbl.text = "0.0"
+    }
     
     
     func playSound() {
